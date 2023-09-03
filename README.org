@@ -1,0 +1,6 @@
+#+title: Readme
+
+* SRFI-64* (SRFI-64-EXTENDED)
+WARNING: THIS LIBRARY IS NOT SRFI! IT'S JUST EXTENDS (SRFI SRFI-64).
+
+This a set of utilities/wrappers around srfi-64 for testing in Guile Scheme. It's all from Andrew Tropin's RDE, just modularized and moved to separated module.
