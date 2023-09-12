@@ -1,6 +1,16 @@
 #+title: Readme
 
-* SRFI-64* (SRFI-64-EXTENDED)
-WARNING: THIS LIBRARY IS NOT SRFI! IT'S JUST EXTENDS (SRFI SRFI-64).
+* SRFI-64-EXT(ENDED)
+WARNING: THIS LIBRARY IS NOT SRFI! IT'S JUST EXTENDS ~(srfi srfi-64-ext)~.
 
-This a set of utilities/wrappers around srfi-64 for testing in Guile Scheme. It's all from Andrew Tropin's RDE, just modularized and moved to separated module.
+This a set of utilities/wrappers around ~srfi-64~ for testing in Guile Scheme. It's from [[https://git.sr.ht/~abcdw/rde][Andrew Tropin's RDE]], just modularized and packed separately.
+* Running examples
+#+begin_src sh
+guile -L . -c \
+    "(use-modules
+       (srfi srfi-64-ext))
+    (run-project-tests-cli
+      (list
+        (resolve-module
+         '(examples simple))))"
+#+end_src
